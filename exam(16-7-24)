@@ -1,0 +1,53 @@
+1)interface Polygon {
+  void getArea(int length, int breadth);
+}
+
+// implement the Polygon interface
+class Rectangle implements Polygon {
+
+  // implementation of abstract method
+  public void getArea(int length, int breadth) {
+    System.out.println("The area of the rectangle is " + (length * breadth));
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Rectangle r1 = new Rectangle();
+    r1.getArea(5, 6);
+  }
+}
+
+
+public interface Animal {
+    // Declare the abstract method "bark" that classes implementing this interface must provide
+    void bark();
+}
+
+
+2)public class Dog implements Animal {
+    // Implement the "bark" method required by the Animal interface
+    @Override
+    public void bark() {
+        // Print a message indicating that the Dog is barking
+System.out.println("Dog is barking!");
+    }
+}
+Copy
+// Main.java
+// Class Main
+
+// Declare the Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of the Dog class
+        Dog dog = new Dog();
+        
+        // Call the "bark" method on the Dog instance
+        dog.bark();
+   
+    }
+}
+
+
+
